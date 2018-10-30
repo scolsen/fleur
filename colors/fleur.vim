@@ -170,6 +170,12 @@ function! s:setLight()
   call s:highlight('SpellBad', '', 'white', 'underline')
   call s:highlight('SpellCap', '', 'white', 'underline')
 
+  " Markdown
+  call s:highlight('markdownLinkText', 'skyblue', '', 'underline')
+  call s:highlight('markdownHeadingDelimiter', 'skyblue')
+  call s:highlight('markdownListMarker', 'skyblue')
+  call s:highlight('markdownCodeDelimiter', 'orchid')
+
 endfunction
 
 " Set base colors.
