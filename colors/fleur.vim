@@ -175,6 +175,12 @@ function! s:setLight()
   call s:highlight('markdownHeadingDelimiter', 'skyblue')
   call s:highlight('markdownListMarker', 'skyblue')
   call s:highlight('markdownCodeDelimiter', 'orchid')
+  call s:highlight('markdownH1', 'skyblue', '', 'bold')
+  call s:highlight('markdownH2', 'skyblue', '', 'bold')
+  call s:highlight('markdownH3', 'skyblue', '', 'bold')
+  call s:highlight('markdownH4', 'skyblue', '', 'bold')
+  call s:highlight('markdownH5', 'skyblue', '', 'bold')
+  call s:highlight('markdownH6', 'skyblue', '', 'bold')
 
 endfunction
 
