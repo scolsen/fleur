@@ -113,10 +113,10 @@ function! s:setLight()
   " Base colors.
   call s:highlight('Normal', 'black', 'white')
   call s:highlight('NonText', 'darkgrey')
-  call s:highlight('comment', 'skyblue')
+  call s:highlight('comment', 'navy')
   call s:highlight('constant', 'black', 'white', 'bold')
   call s:highlight('string', 'grey')
-  call s:highlight('identifier', 'darkgrey', 'white')
+  call s:highlight('identifier', 'skyblue', 'white')
   call s:highlight('statement', 'black', '', 'bold')
   call s:highlight('define', 'darkgrey')
   call s:highlight('preproc', 'skyblue')
@@ -181,6 +181,12 @@ function! s:setLight()
   call s:highlight('markdownH4', 'skyblue', '', 'bold')
   call s:highlight('markdownH5', 'skyblue', '', 'bold')
   call s:highlight('markdownH6', 'skyblue', '', 'bold')
+
+  " Lisp
+  call s:highlight('lispMark', 'orchid')
+  syn match paren "[()]"
+  hi def link paren Paren
+  call s:highlight('Paren', 'black', '', 'bold')
 
 endfunction
 
